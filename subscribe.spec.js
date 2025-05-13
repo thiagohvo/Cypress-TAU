@@ -1,5 +1,5 @@
 // cypress/integration/cadastro.spec.js
-/// <reference types="cypress" />
+// <reference types="cypress" />
 
 describe('Funcionalidade de Cadastro', () => {
   beforeEach(() => {
