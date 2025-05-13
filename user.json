@@ -1,4 +1,4 @@
-// cypress/fixtures/usuario.json
+
 {
   "nome": "Usuário Teste",
   "email": "usuario.teste@example.com",
