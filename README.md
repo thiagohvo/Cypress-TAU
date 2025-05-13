@@ -41,8 +41,8 @@ cypress/
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/your-username/cypress-automation.git
-cd cypress-automation
+git clone https://github.com/thiagohvo/Cypress-TAU.git
+cd Cypress-TAU
 ```
 
 2. Install dependencies:
