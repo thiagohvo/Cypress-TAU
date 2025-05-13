@@ -1,0 +1,14 @@
+// cypress/fixtures/usuario.json
+{
+  "nome": "Usuário Teste",
+  "email": "usuario.teste@example.com",
+  "senha": "Senha@123",
+  "endereco": {
+    "rua": "Rua Exemplo",
+    "numero": "123",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "cep": "01001-000"
+  },
+  "telefone": "(11) 99999-9999"
+}
