@@ -1,5 +1,5 @@
 // cypress/integration/busca.spec.js
-/// <reference types="cypress" />
+// <reference types="cypress" />
 
 describe('Funcionalidade de Busca', () => {
   beforeEach(() => {
