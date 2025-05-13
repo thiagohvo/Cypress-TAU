@@ -1,0 +1,39 @@
+// cypress/fixtures/produtos.json
+[
+  {
+    "id": 1,
+    "nome": "Notebook Profissional",
+    "preco": 3999.99,
+    "categoria": "Eletrônicos",
+    "disponivel": true,
+    "imagem": "notebook.jpg",
+    "descricao": "Notebook com processador de última geração, ideal para trabalhos profissionais."
+  },
+  {
+    "id": 2,
+    "nome": "Smartphone XYZ",
+    "preco": 2499.90,
+    "categoria": "Eletrônicos",
+    "disponivel": true,
+    "imagem": "smartphone.jpg",
+    "descricao": "Smartphone com câmera de alta resolução e bateria de longa duração."
+  },
+  {
+    "id": 3,
+    "nome": "Fones de Ouvido Bluetooth",
+    "preco": 299.90,
+    "categoria": "Acessórios",
+    "disponivel": true,
+    "imagem": "fones.jpg",
+    "descricao": "Fones com cancelamento de ruído e alta qualidade de som."
+  },
+  {
+    "id": 4,
+    "nome": "Monitor Ultrawide",
+    "preco": 1299.99,
+    "categoria": "Eletrônicos",
+    "disponivel": false,
+    "imagem": "monitor.jpg",
+    "descricao": "Monitor ultrawide de 34 polegadas com resolução 4K."
+  }
+]
