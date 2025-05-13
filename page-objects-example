@@ -1,0 +1,60 @@
+// cypress/integration/page-objects-example.spec.js
+/// <reference types="cypress" />
+
+import LoginPage from '../support/pages/LoginPage';
+import ProdutoPage from '../support/pages/ProdutoPage';
+
+describe('Testes usando Page Objects', () => {
+  const loginPage = new LoginPage();
+  const produtoPage = new ProdutoPage();
+
+  beforeEach(() => {
+    cy.fixture('usuario').as('usuario');
+  });
+
+  it('deve fazer login com page objects', function() {
+    loginPage.visit();
+    loginPage.loginWithValidCredentials(this.usuario.email, this.usuario.senha);
+    
+    // Validar que o usuário está na página de dashboard
+    cy.url().should('include', '/dashboard');
+  });
+
+  it('deve exibir erro para senha incorreta', function() {
+    loginPage.visit();
+    loginPage.fillEmail(this.usuario.email);
+    loginPage.fillPassword('senha_incorreta');
+    loginPage.submit();
+    
+    loginPage.verifyErrorMessage('Credenciais inválidas');
+  });
+
+  it('deve visualizar detalhes do produto', () => {
+    cy.fixture('produtos').then((produtos) => {
+      const produto = produtos[0];
+      
+      produtoPage.visit(produto.id);
+      
+      produtoPage.getProdutoTitulo()
+        .should('contain', produto.nome);
+      
+      produtoPage.getProdutoPreco()
+        .should('contain', produto.preco.toFixed(2).replace('.', ','));
+      
+      produtoPage.getProdutoDescricao()
+        .should('contain', produto.descricao);
+    });
+  });
+
+  it('deve adicionar produto ao carrinho', () => {
+    cy.fixture('produtos').then((produtos) => {
+      const produto = produtos[0];
+      
+      produtoPage.visit(produto.id);
+      produtoPage.selecionarQuantidade('2');
+      produtoPage.adicionarAoCarrinho();
+      
+      produtoPage.verificarMensagemAdicionado();
+    });
+  });
+});
