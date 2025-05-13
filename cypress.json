@@ -1,4 +1,4 @@
-// cypress.json
+
 {
   "baseUrl": "https://example.cypress.io",
   "viewportWidth": 1280,
