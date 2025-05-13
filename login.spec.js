@@ -1,5 +1,5 @@
 // cypress/integration/login.spec.js
-/// <reference types="cypress" />
+// <reference types="cypress" />
 
 describe('Funcionalidade de Login', () => {
   beforeEach(() => {
