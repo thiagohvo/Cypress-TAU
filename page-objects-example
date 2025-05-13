@@ -1,5 +1,5 @@
 // cypress/integration/page-objects-example.spec.js
-/// <reference types="cypress" />
+// <reference types="cypress" />
 
 import LoginPage from '../support/pages/LoginPage';
 import ProdutoPage from '../support/pages/ProdutoPage';
