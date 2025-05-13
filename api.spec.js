@@ -1,5 +1,5 @@
 // cypress/integration/api.spec.js
-/// <reference types="cypress" />
+// <reference types="cypress" />
 
 describe('Testes de API', () => {
   it('deve fazer login via API', () => {
