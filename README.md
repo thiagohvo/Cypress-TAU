@@ -81,10 +81,6 @@ During the development of this project, I applied the following concepts:
 - Efficient use of fixtures for test data
 - Strategies for handling asynchronous elements
 
-## 📫 Contact
-
-If you have  any suggestions about this project, feel free to get in touch.
-
 ---
 
 This project was developed as part of the learning from the Introduction to Cypress course at Test Automation University.
